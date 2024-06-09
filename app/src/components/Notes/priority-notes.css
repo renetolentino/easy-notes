@@ -1,0 +1,11 @@
+li.notepad-infos textarea:hover {
+  cursor: default;
+}
+
+.notepad-infos.priority {
+  background-color: #ffd580;
+}
+
+li.notepad-infos.priority textarea {
+  background-color: #ffd580;
+}

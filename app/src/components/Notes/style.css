@@ -1,0 +1,67 @@
+li div div .delete-icon,
+.important-icon,
+.edit-icon {
+  font-size: 1.4rem;
+}
+
+.lower-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li.notepad-infos div {
+  display: flex;
+  justify-content: space-between;
+}
+
+li.notepad-infos {
+  background: var(--notes-bg);
+  box-shadow: 0 0 1.4rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+li.notepad-infos strong {
+  display: block;
+  font-size: 1.6rem;
+  color: var(--light-brown-color);
+}
+
+li.notepad-infos div div {
+  color: var(--light-gray-color);
+  cursor: pointer;
+}
+
+li.notepad-infos div div:hover {
+  color: var(--main-buttons);
+  transition: 200ms;
+}
+
+li.notepad-infos textarea {
+  padding: 0.7rem;
+  margin-top: 0.7rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 13rem;
+  font-size: 1.4rem;
+  color: var(--light-gray-color);
+  border: 0;
+  background-color: var(--notes-bg);
+  resize: none;
+}
+
+li.notepad-infos textarea:hover {
+  cursor: default;
+}
+
+li.notepad-infos span {
+  color: var(--light-gray-color);
+  cursor: pointer;
+}
+
+li.notepad-infos span:hover {
+  color: var(--main-buttons);
+  transition: 200ms;
+}

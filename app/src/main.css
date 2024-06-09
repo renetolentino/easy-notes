@@ -1,0 +1,39 @@
+:root {
+  --main-bg: #d3d3d3;
+  --notes-bg: #fdfd96;
+  --main-header: #ffc0cb;
+  --main-buttons: #b0e57c;
+  --active-buttons: #6b8e23;
+  --highlight-color: #aec6cf;
+  --light-gray-color: #4a4a4a;
+  --black-color: #000000;
+  --light-brown-color: #3b3b3b;
+  --priority-bg: #ffd580;
+  --btn-enabled: #b0e57c;
+}
+
+main {
+  flex: 1;
+  margin: 0 1.5rem;
+}
+
+main ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  list-style: none;
+  position: relative;
+  margin-left: 320px;
+}
+
+@media (max-width: 600px) {
+  main ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  main ul {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,44 @@
+:root {
+  --main-bg: #d3d3d3;
+  --notes-bg: #fdfd96;
+  --main-header: #ffc0cb;
+  --main-buttons: #b0e57c;
+  --active-buttons: #6b8e23;
+  --highlight-color: #aec6cf;
+  --light-gray-color: #4a4a4a;
+  --black-color: #000000;
+  --light-brown-color: #3b3b3b;
+  --priority-bg: #ffd580;
+  --btn-enabled: #b0e57c;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+@media (max-width: 1000px) {
+  #app {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  #app main {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  #app aside {
+    width: 100%;
+  }
+}
+
+#btn-submit.enabled {
+  background-color: var(--active-buttons);
+  transition: all 1s ease-in-out;
+  color: black;
+}

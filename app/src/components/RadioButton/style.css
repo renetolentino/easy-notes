@@ -1,0 +1,24 @@
+:root {
+  --main-bg: #d3d3d3;
+  --notes-bg: #fdfd96;
+  --main-header: #ffc0cb;
+  --main-buttons: #b0e57c;
+  --active-buttons: #6b8e23;
+  --highlight-color: #aec6cf;
+  --light-gray-color: #4a4a4a;
+  --black-color: #000000;
+  --light-brown-color: #3b3b3b;
+  --priority-bg: #ffd580;
+  --btn-enabled: #b0e57c;
+}
+
+aside div.radioOptions {
+  color: var(--light-brown-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}

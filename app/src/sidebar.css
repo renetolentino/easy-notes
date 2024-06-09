@@ -1,0 +1,98 @@
+:root {
+  --main-bg: #d3d3d3;
+  --notes-bg: #fdfd96;
+  --main-header: #ffc0cb;
+  --main-buttons: #b0e57c;
+  --active-buttons: #6b8e23;
+  --highlight-color: #aec6cf;
+  --light-gray-color: #4a4a4a;
+  --black-color: #000000;
+  --light-brown-color: #3b3b3b;
+  --priority-bg: #ffd580;
+  --btn-enabled: #b0e57c;
+}
+aside {
+  min-width: 320px;
+  margin-bottom: 30px;
+  background: var(--main-header);
+  box-shadow: 0 0 14px 0 rba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 30px 20px;
+  position: fixed;
+  left: 1rem;
+  top: 2rem;
+  z-index: 1000;
+}
+
+@media (max-width: 1000px) {
+  aside {
+    position: relative;
+  }
+}
+
+aside strong {
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  color: var(--light-brown-color);
+}
+
+aside form {
+  margin-top: 3rem;
+}
+
+aside form .input-block {
+  margin-top: 2rem;
+}
+
+aside form .input-block label {
+  color: var(--light-brown-color);
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: block;
+}
+
+aside form .input-block input {
+  width: 100%;
+  height: 3.2rem;
+  font-size: 1.4rem;
+  color: var(--light-gray-color);
+  border: 0;
+  border-bottom: 1px solid var(--highlight-color);
+  border-radius: 0.2rem;
+  padding-left: 0.4rem;
+}
+
+aside form .input-block input:focus {
+  background-color: var(--highlight-color);
+}
+
+aside form .input-block textarea {
+  margin-top: 0.7rem;
+  width: 100%;
+  height: 20rem;
+  font-size: 1.4rem;
+  color: var(--light-gray-color);
+  border: 0;
+  border-bottom: var(--highlight-color);
+  background-color: var(--notes-bg);
+  resize: none;
+  border-radius: 0.2rem;
+}
+
+aside form .input-block textarea:focus {
+  background-color: var(--highlight-color);
+}
+
+aside form button[type='submit'] {
+  width: 100%;
+  border: 0;
+  margin-top: 3rem;
+  background-color: var(--main-buttons);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--light-brown-color);
+  cursor: pointer;
+}
