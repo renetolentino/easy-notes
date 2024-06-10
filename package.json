@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "nodemon server.js",
-    "start:prod": "npm server.js"
+    "start:prod": "node server.js"
   },
   "author": "Renê Tolentino Ramos",
   "license": "ISC",
