@@ -8,7 +8,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 // MIDDLWARES PARA LIDAR COM REQUESTS E RESPONSES
-app.set('view engine', 'html');
+app.set('view engine', 'js');
 console.log(path.join(__dirname, 'app/build/index'));
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'app/build')));
