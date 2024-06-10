@@ -28,7 +28,7 @@ exports.getAllNotes = async (req, res) => {
       });
     } catch (err) {
       console.error(err);
-      res.send(500).json({
+      res.status(500).json({
         Status: 'Falha',
         menssagem: 'Algo deu muito errado, por favor tente mais tarde',
       });
@@ -42,7 +42,7 @@ exports.getAllNotes = async (req, res) => {
       });
     } catch (err) {
       console.error(err);
-      res.send(500).json({
+      res.status(500).json({
         Status: 'Falha',
         menssagem: 'Algo deu muito errado, por favor tente mais tarde',
       });
@@ -56,7 +56,7 @@ exports.getAllNotes = async (req, res) => {
       });
     } catch (err) {
       console.error(err);
-      res.send(500).json({
+      res.status(500).json({
         Status: 'Falha',
         menssagem: 'Algo deu muito errado, por favor tente mais tarde',
       });

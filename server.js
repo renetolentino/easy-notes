@@ -7,14 +7,17 @@ const mongoose = require('mongoose');
 const connectDB = async () => {
   const uri = process.env.DATABASE_HOST;
   const password = process.env.DATABASE_PASSWORD;
-  //   console.log(uri);
+  const connectURI = uri.replace('<password>', password);
+  console.log(connectURI);
 
   try {
-    const connect = await mongoose.connect(uri.replace('<password>', password));
+    const connect = await mongoose.connect(connectURI);
     if (connect) {
       console.log('Conectado com sucesso!');
     }
-  } catch (err) {}
+  } catch (err) {
+    console.error(err);
+  }
 };
 
 connectDB();
