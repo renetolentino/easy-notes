@@ -1,0 +1,44 @@
+{
+  "roles": [
+    {
+      "name": "admin",
+      "permissions": [
+        "create_note",
+        "update_note",
+        "delete_note",
+        "read_note",
+        "update_user",
+        "read_user",
+        "updateme_user",
+        "deleteme_user",
+        "readme_user"
+      ]
+    },
+    {
+      "name": "manager",
+      "permissions": [
+        "create_record",
+        "read_record",
+        "update_record",
+        "update_user",
+        "read_user",
+        "updateme_user",
+        "deleteme_user",
+        "readme_user"
+      ]
+    },
+    {
+      "name": "user",
+      "permissions": [
+        "create_note",
+        "update_note",
+        "delete_note",
+        "read_note",
+        "create_user",
+        "updateme_user",
+        "deleteme_user",
+        "readme_user"
+      ]
+    }
+  ]
+}

@@ -8,7 +8,7 @@ const connectDB = async () => {
   const uri = process.env.DATABASE_HOST;
   const password = process.env.DATABASE_PASSWORD;
   const connectURI = uri.replace('<password>', password);
-  console.log(connectURI);
+  // console.log(connectURI);
 
   try {
     const connect = await mongoose.connect(connectURI);
